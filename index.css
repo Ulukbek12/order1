@@ -4,7 +4,12 @@ body{
 *{
   margin: 0;
   padding: 0;
+  
 }
+section{
+  width: 100%;
+}
+
 main{
 background-image: linear-gradient(to right top, #8c450e, #852c26, #721d36, #55193f, #33193e, #311b44, #2e1d4a, #2a2050, #512463, #7b226e, #a71870, #d10969) ;
   background-position: center;
@@ -102,7 +107,7 @@ mix-blend-mode: normal;
 opacity: 0.1;
 width: 1041px;
 margin-left: 198px;
-height: 70px;
+min-height: 0.2vh;
 padding: 39px 0;
 color: #fff;
 letter-spacing: 1px;
@@ -143,37 +148,33 @@ a i{
   display: none;
 }
 
-@media (max-width:1240px){
+@media (max-width:1300px){
   .bottom-side{
+    display: block;
     margin: auto;
     width: 80%;
   }
 }
-@media (max-width:1000px){
-  .bottom-side{
-    padding: 20px;
-  }
+@media (max-width:1100px){
   .sides-holder{
     display: block;
-  }
-  .left-content,
-  .right-content{
     margin: auto;
-    width: 80%;
   }
   .left-content{
-    margin-bottom: 50px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .right-content{
+    width: 100%;
   }
   .button{
-    transform: translateY(-10px);
+    margin-top: -4rem;
+    margin-bottom: 1rem;
   }
 }
-@media (max-width:900px){
-  .left-content,
-  .right-content{
-    margin: auto;
-    width: 90%;
-  }
+
+@media (max-width:920px){
   .toggle{
     display: block;
     color: #fff;
@@ -187,49 +188,25 @@ a i{
   .left-content{
     margin-bottom: 50px;
   }
-}
-@media (max-width:600px){
-  .left-content,
-  .right-content{
-    font-size:15px;
-    margin: auto;
-    width: 100%;
-    display: block;
-    transform: translateX(-80px);
-  }
-.title{
-    font-size:20px;
-  }
-  .subtitle{
-    font-size: 16px;
-    margin-top: -40px;
-  }
-  .button{
-    width: 100px;
-    width: calc(75px);
-    padding: 10px;
-
-  }
-  .button a{
-    font-size: 13px;
+  .bottom-side{
+    padding: 8px 50px;
   }
 }
-@media (max-width:750px){
-  .left-content,
-  .right-content{
-    display: block;
-    margin: auto;
-    
-    text-align: left;
+@media (max-width:770px){
+  .bottom-side{
+    display: none;
   }
+  
   .title{
-    font-size:25px;
+    font-size: 2.5rem;
   }
-  .subtitle{
-    font-size: 20px;
+  .sides-holder{
+    transform: translateX(-210px);
+}
+}
+@media (max-width:640px){
+  .sides-holder{
+    transform: translateX(-210px);
+}
 }
 
-.bottom-side{
- display: none;
-}
-}
